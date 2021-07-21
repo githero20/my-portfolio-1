@@ -1,5 +1,4 @@
 import React from "react";
-import profileImage from "../images/g.png";
 
 function About() {
   return (
@@ -34,7 +33,7 @@ function About() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
             className="focus:outline-none border-none object-cover object-center rounded-full px-6 "
-            src={profileImage}
+            src="./g.png"
             alt="omogbai"
             //this is an image of the author, in this case omogbai
           />
