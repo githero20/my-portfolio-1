@@ -30,6 +30,7 @@ function Contact() {
       <form
         netlify
         name="contact"
+        onSubmit={handleSubmit}
         className="lg:w-4/5 md:w-2/3 flex flex-col px-5 py-10 mx-auto"
       >
         {/* sm:ml-5rem md:py-8 mt-8 md:mt-0 */}
