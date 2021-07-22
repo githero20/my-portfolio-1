@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <main className="text-gray-400 bg-coff-ee body-font">
+    <main className="text-gray-300 bg-coff-ee body-font">
       {/* // <main className="text-gray-400 bg-regal-blue body-font"> */}
       <Navbar />
       <About />

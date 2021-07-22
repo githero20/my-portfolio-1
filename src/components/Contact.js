@@ -37,11 +37,24 @@ function Contact() {
         <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
           Hire Me
         </h2>
+        {/* <a
+            href="https://www.linkedin.com/in/omogbai-atakpu"
+            className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a> */}
         <p className="leading-relaxed mb-5">
-          Like what you see? You can reach out to me here:
+          Like what you see? You can also{" "}
+          <a
+            href="https://drive.google.com/file/d/1clUN822lCOSpgrpcxuEvuoamugofqclN/view?usp=sharing"
+            className="underline text-blue-500 hover:text-blue-800"
+          >
+            download my resume
+          </a>{" "}
+          or reach out to me here:
         </p>
         <div className="relative mb-4">
-          <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+          <label htmlFor="name" className="leading-7 text-sm ">
             Name
           </label>
           <input
@@ -53,7 +66,7 @@ function Contact() {
           />
         </div>
         <div className="relative mb-4">
-          <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+          <label htmlFor="email" className="leading-7 text-sm ">
             Email
           </label>
           <input
@@ -65,7 +78,7 @@ function Contact() {
           />
         </div>
         <div className="relative mb-4">
-          <label htmlFor="message" className="leading-7 text-sm text-gray-400">
+          <label htmlFor="message" className="leading-7 text-sm ">
             Message
           </label>
           <textarea

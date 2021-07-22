@@ -26,9 +26,9 @@ function Footer() {
           <FontAwesomeIcon
             className="w-8 h-8 mr-1"
             icon={faCopyright}
-            // size="2x"
+            size="1.5x"
           />{" "}
-          2021 (designed and built by Omogbai Atakpu)
+          2021 (Omogbai Atakpu)
         </p>
       </div>
       {/* <div className="lg:w-2/3 md:w-1/2 bg-coff-ee rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">

@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 
@@ -19,6 +21,21 @@ function Navbar() {
           </a>
           <a href="#reviews" className="mr-5 hover:text-white">
             Reviews
+          </a>
+        </nav>
+
+        <nav>
+          <a
+            href="https://www.linkedin.com/in/omogbai-atakpu"
+            className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a
+            href="https://github.com/githero20"
+            className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
         </nav>
 

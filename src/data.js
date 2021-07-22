@@ -2,24 +2,23 @@ export const projects = [
   {
     title: "YelpCamp",
     subtitle: "MongoDB, Node.js, Express, Vanilla JS",
-    description:
-      "A crowd-sourced review website, about various campgrounds/resorts across the globe, showing their locations, descriptions and reviews from users.",
+    description: "A crowd-sourced review website.",
     image: "./project-1c.gif",
     link: "https://serene-woodland-58988.herokuapp.com/",
   },
 
   {
-    title: "React Meetups",
-    subtitle: "React",
-    description: "A simple meetup app based on the nextjs, react framework.",
+    title: "Meetups",
+    subtitle: "Next.js",
+    description: "A meetup app based on the Next.js framework.",
     image: "./project-2a.gif",
     link: "https://meetup-nextjs-mu.vercel.app/",
   },
 
   {
     title: "Fancy Quotes",
-    subtitle: "React and Firebase",
-    description: "A simple quotes app based on react.",
+    subtitle: "React.js and Firebase",
+    description: "A simple quotes app based on React.",
     image: "./project-3a.gif",
     link: "https://react-http-5d9af.web.app/",
   },
@@ -42,11 +41,12 @@ export const reviews = [
 
 export const skills = [
   "JavaScript",
-  "React",
+  "React.js",
   "Next.js",
   "Node.js",
   "Express",
   "MongoDB",
   "RESTful APIs",
   "Version control with Git",
+  "Python",
 ];
