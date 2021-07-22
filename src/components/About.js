@@ -10,6 +10,9 @@ function About() {
             STACK developer.
           </h1>
 
+          {/* <p className="mb-8 leading-relaxed">
+            I also rate plantain professionally :)
+          </p> */}
           <p className="mb-8 leading-relaxed">
             I also rate plantain professionally :)
           </p>
