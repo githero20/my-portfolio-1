@@ -18,14 +18,17 @@ function Projects() {
             as practice exercises. Feel free to peruse them.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+
+        <div className="flex flex-wrap lg:w-4/5 my-4 mx-auto">
+          {/* <div className="flex flex-wrap -m-4"> */}
           {/* <div className="w-full flex flex-wrap m-4"> */}
-          {/* this is a div that wraps all the projects done */}
+          {/* this is the div that wraps all the projects done */}
+
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/3 w-full p-4"
+              className="sm:w-1/2 w-full p-4"
               // className="w-full rounded-full h-full p-4"
             >
               <div className="flex relative">

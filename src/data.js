@@ -6,6 +6,13 @@ export const projects = [
     image: "./project-1c.gif",
     link: "https://serene-woodland-58988.herokuapp.com/",
   },
+  {
+    title: "Link'D",
+    subtitle: "MongoDB, Express, React.js, Node.js",
+    description: "A social network application.",
+    image: "./project-4_1.gif",
+    link: "https://link-d.herokuapp.com/",
+  },
 
   {
     title: "Meetups",
