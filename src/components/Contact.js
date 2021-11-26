@@ -46,7 +46,9 @@ function Contact() {
         <p className="leading-relaxed mb-5">
           Like what you see? You can also{" "}
           <a
-            href="https://drive.google.com/file/d/1AjvUUtFI0cJcEl7fzXZj9TOmDYnycps6/view?usp=sharing"
+            // href="https://drive.google.com/file/d/1AjvUUtFI0cJcEl7fzXZj9TOmDYnycps6/view?usp=sharing"
+            href="/omogbai_cv.pdf"
+            target="_blank"
             className="underline text-blue-500 hover:text-blue-800"
           >
             download my resume
