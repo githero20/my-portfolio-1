@@ -1,7 +1,21 @@
 export const projects = [
   {
+    title: "PayMyBills",
+    subtitle: "Typescript, React, Redux, Styled Components",
+    description: "A bills payment platform.",
+    image: "./project-5.gif",
+    link: "https://paymybills.ng/",
+  },
+  {
+    title: "Adashi",
+    subtitle: "Typescript, React, Redux, Styled Components",
+    description: "A savings platform for individuals, groups.",
+    image: "./project-6.gif",
+    // link: "https://serene-woodland-58988.herokuapp.com/",
+  },
+  {
     title: "YelpCamp",
-    subtitle: "MongoDB, Node.js, Express, Vanilla JS",
+    subtitle: "MongoDB, Node.js, Express, JavaScript",
     description: "A crowd-sourced review website.",
     image: "./project-1c.gif",
     link: "https://serene-woodland-58988.herokuapp.com/",
@@ -48,12 +62,15 @@ export const reviews = [
 
 export const skills = [
   "JavaScript",
-  "React.js",
+  "TypeScript",
+  "React",
+  "React Native",
+  "Redux",
   "Next.js",
   "Node.js",
   "Express",
   "MongoDB",
   "RESTful APIs",
+  "HTML/CSS",
   "Version control with Git",
-  "Python",
 ];
