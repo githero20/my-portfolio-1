@@ -2,9 +2,9 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
-function Skills() {
+function Skills({ skillsRef }) {
   return (
-    <section id="skills">
+    <section id="skills" ref={skillsRef}>
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />

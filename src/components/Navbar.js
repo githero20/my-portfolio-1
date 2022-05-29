@@ -3,25 +3,43 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 
-function Navbar() {
+function Navbar({
+  scroll,
+  aboutRef,
+  projectRef,
+  skillsRef,
+  reviewRef,
+  contactRef,
+  navRef,
+}) {
   return (
-    <header className="bg-gray-800 md:sticky top=0 z-10">
+    <div ref={navRef} className="bg-gray-800 md:sticky top=0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <button className="title-font font-medium text-white mb-4 mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-xl">
+          <span className="ml-3 text-xl" onClick={() => scroll(aboutRef)}>
             Omogbai Atakpu
-          </a>
+          </span>
         </button>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-1 md:border-gray-700 flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 hover:text-white">
+          <span
+            className="mr-5 hover:text-white cursor-pointer"
+            onClick={() => scroll(projectRef)}
+          >
             Projects
-          </a>
-          <a href="#skills" className="mr-5 hover:text-white">
+          </span>
+          <span
+            className="mr-5 hover:text-white cursor-pointer"
+            onClick={() => scroll(skillsRef)}
+          >
             Skills
-          </a>
-          <a href="#reviews" className="mr-5 hover:text-white">
+          </span>
+          <span
+            href="#reviews"
+            className="mr-5 hover:text-white cursor-pointer"
+            onClick={() => scroll(reviewRef)}
+          >
             Reviews
-          </a>
+          </span>
         </nav>
 
         <nav>
@@ -39,15 +57,15 @@ function Navbar() {
           </a>
         </nav>
 
-        <a
-          href="#contact"
+        <span
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          onClick={() => scroll(contactRef)}
         >
           Hire Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
+        </span>
       </div>
-    </header>
+    </div>
   );
 }
 

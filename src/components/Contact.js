@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 
-function Contact() {
+function Contact({ contactRef }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -26,7 +26,7 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="relative">
+    <section id="contact" className="relative" ref={contactRef}>
       <form
         netlify
         name="contact"
