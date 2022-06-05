@@ -13,7 +13,7 @@ function Navbar({
   navRef,
 }) {
   return (
-    <div ref={navRef} className="bg-gray-800 md:sticky top=0 z-10">
+    <header ref={navRef} className="bg-gray-800 md:sticky top=0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <button className="title-font font-medium text-white mb-4 mb-4 md:mb-0">
           <span className="ml-3 text-xl" onClick={() => scroll(aboutRef)}>
@@ -65,7 +65,7 @@ function Navbar({
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </span>
       </div>
-    </div>
+    </header>
   );
 }
 

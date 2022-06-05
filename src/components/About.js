@@ -1,6 +1,6 @@
 import React from "react";
 
-function About({ aboutRef }) {
+function About({ scroll, aboutRef, contactRef, projectRef }) {
   return (
     <section id="about" ref={aboutRef}>
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -18,18 +18,18 @@ function About({ aboutRef }) {
             I also rate plantain professionally :)
           </p>
           <div className="flex justify-center">
-            <a
-              href="#contact"
-              className="inline-flex text-white bg-sapphire-blue border-0 py-2 px-6 focus:outline-none hover:bg-star-command rounded text-lg"
+            <span
+              onClick={() => scroll(contactRef)}
+              className="cursor-pointer inline-flex text-white bg-sapphire-blue border-0 py-2 px-6 focus:outline-none hover:bg-star-command rounded text-lg"
             >
               Work With Me
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-300 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            </span>
+            <span
+              onClick={() => scroll(projectRef)}
+              className="cursor-pointer ml-4 inline-flex text-gray-300 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             >
               See My Past Work
-            </a>
+            </span>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

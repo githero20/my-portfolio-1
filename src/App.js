@@ -22,24 +22,32 @@ function App() {
     });
   let navRef = useRef();
   return (
-    <main className="text-gray-300 bg-coff-ee body-font">
-      {/* // <main className="text-gray-400 bg-regal-blue body-font"> */}
-      <Navbar
-        scroll={scrollToSection}
-        aboutRef={aboutRef}
-        projectRef={projectRef}
-        skillsRef={skillsRef}
-        reviewRef={reviewRef}
-        contactRef={contactRef}
-        navRef={navRef}
-      />
-      <About aboutRef={aboutRef} />
-      <Projects projectRef={projectRef} />
-      <Skills skillsRef={skillsRef} />
-      <Reviews reviewRef={reviewRef} />
-      <Contact contactRef={contactRef} />
-      <Footer />
-    </main>
+    <>
+      {/* <header className="sticky ">here comes the sun</header> */}
+      <main className="text-gray-300 bg-coff-ee body-font">
+        {/* // <main className="text-gray-400 bg-regal-blue body-font"> */}
+        <Navbar
+          scroll={scrollToSection}
+          aboutRef={aboutRef}
+          projectRef={projectRef}
+          skillsRef={skillsRef}
+          reviewRef={reviewRef}
+          contactRef={contactRef}
+          navRef={navRef}
+        />
+        <About
+          scroll={scrollToSection}
+          aboutRef={aboutRef}
+          contactRef={contactRef}
+          projectRef={projectRef}
+        />
+        <Projects projectRef={projectRef} />
+        <Skills skillsRef={skillsRef} />
+        <Reviews reviewRef={reviewRef} />
+        <Contact contactRef={contactRef} />
+        <Footer />
+      </main>
+    </>
   );
 }
 
