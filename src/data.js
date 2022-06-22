@@ -11,7 +11,7 @@ export const projects = [
     subtitle: "Typescript, React, Redux, Styled Components",
     description: "A savings platform for individuals, groups.",
     image: "./project-6.gif",
-    // link: "https://serene-woodland-58988.herokuapp.com/",
+    link: "https://adashi-staging.netlify.app/",
   },
   {
     title: "YelpCamp",
@@ -66,6 +66,8 @@ export const skills = [
   "React",
   "React Native",
   "Redux",
+  "Styled Components",
+  "SASS",
   "Next.js",
   "Node.js",
   "Express",
