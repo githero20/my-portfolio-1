@@ -4,6 +4,8 @@ import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
 function Footer() {
+  const today = new Date();
+
   return (
     <footer className="bg-gray-800 sticky bottom=0">
       <div className="container mx-auto flex flex-wrap p-5 flex-row items-center">
@@ -28,7 +30,7 @@ function Footer() {
             icon={faCopyright}
             size="1.5x"
           />{" "}
-          2021 (Omogbai Atakpu)
+          {today.getFullYear()} (Omogbai Atakpu)
         </p>
       </div>
       {/* <div className="lg:w-2/3 md:w-1/2 bg-coff-ee rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
