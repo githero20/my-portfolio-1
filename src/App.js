@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import ReactGA from "react-ga";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -7,7 +8,14 @@ import Skills from "./components/Skills";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 
+const TRACKING_ID = "G-VHGWT9J1RT";
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const aboutRef = useRef();
   const projectRef = useRef();
   const skillsRef = useRef();

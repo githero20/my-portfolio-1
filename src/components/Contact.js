@@ -1,10 +1,13 @@
 import { useState } from "react";
 import React from "react";
+import useAnalyticsEventTracker from "../helpers/useAnalyticsEventTracker";
 
 function Contact({ contactRef }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const gaEventTracker = useAnalyticsEventTracker("Contact");
 
   function encode(data) {
     return Object.keys(data)
@@ -15,6 +18,7 @@ function Contact({ contactRef }) {
   }
 
   function handleSubmit(e) {
+    gaEventTracker("form submit", "netlify form");
     e.preventDefault();
     fetch("/", {
       method: "POST",
@@ -48,6 +52,7 @@ function Contact({ contactRef }) {
           <a
             // href="https://drive.google.com/file/d/1AjvUUtFI0cJcEl7fzXZj9TOmDYnycps6/view?usp=sharing"
             href="/omogbai_cv.pdf"
+            onClick={() => gaEventTracker("download", "resume")}
             target="_blank"
             className="underline text-blue-500 hover:text-blue-800"
           >
