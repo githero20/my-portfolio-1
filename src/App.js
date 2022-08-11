@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 
-const TRACKING_ID = "G-VHGWT9J1RT";
+const TRACKING_ID = "UA-200635602-1";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
