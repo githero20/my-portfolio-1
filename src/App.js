@@ -13,6 +13,10 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
+    window.location.href = "https://omogbai-atakpu.vercel.app/";
+  }, []);
+
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
