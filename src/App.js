@@ -12,9 +12,9 @@ const TRACKING_ID = "UA-200635602-1";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
-  useEffect(() => {
-    window.location.href = "https://omogbaiatakpu.com/";
-  }, []);
+  // useEffect(() => {
+  //   window.location.href = "https://omogbaiatakpu.com/";
+  // }, []);
 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
